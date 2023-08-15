@@ -23,7 +23,7 @@ class _LocationInputState extends State<LocationInput> {
 
   Future<void> _savePlace(double latitude, double longitude) async {
     final url = Uri.parse(
-        'https://maps.googleapis.com/maps/api/geocode/json?latlng=$latitude,$longitude&key=AIzaSyCrCFEl8OM3aWJ0Fjfd_FuOo9pcucnbzew');
+        'https://maps.googleapis.com/maps/api/geocode/json?latlng=$latitude,$longitude&key=YourAPIKEY'); // Enter Your API Key
 
     final response = await http.get(url);
     final resData = json.decode(response.body);
